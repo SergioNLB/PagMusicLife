@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicLife</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        p{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        img{
+            width: 80%;
+        }
+        #PrimeraParte{
+            display: inline-block;
+            width: 40%;
+            border: 5px solid #ccc;
+            padding: 30px;
+            text-align: center;
+            background-color: rgb(115, 59, 59);
+            margin-top: 100px;
+            margin-left: 100px;
+
+        }
+        #SegundaParte{
+            display: inline-block;
+            padding: 30px;
+            text-align: right;
+            margin-top: 100px;
+            margin-right: 100px;
+
+        }
+        .ParteUno{
+            display: flex;
+        }
+        .zonasvideos{
+            display: flex;
+            
+        }
+        #videoUno{
+            display: inline-block;
+            margin: 80px;;
+            
+            border-color: black;
+        }
+        #videoDos{
+            display: inline-block;
+            
+        }
+        #FraseAnim{
+            color: rgba(40, 40, 40, 0.737);
+            display: block;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            white-space: nowrap;
+            border-right: 4px solid;
+            width: 44ch;
+            text-align: center;
+            margin: 0 auto;
+            animation: typing 2s steps(44), blick .5s infinite step-end;
+            overflow: hidden;
+        }
+        @keyframes typing{
+            from{ width: 0%;}
+        }
+    </style>
+</head>
+<body>
+    <header >
+            <div class="contenedor">
+                <a href="MusicLife.html"><img style="width: 27%;" src="Imagenes/LogoGuitarra-removebg-preview.png"></a>
+                <p class="logo" >Music Life</p>
+                <nav>
+                    <a href="QuienesSomos.html"> ¿Quienes Somos?</a>
+                    <a href="Horarios.html">Horarios</a>
+                    <a href="MusicLife.html">Nuestros Instructores</a>
+                    <a href="Contactanos.html">Contacto</a>
+                </nav>
+            </div>
+    </header>
+    <br><br><br><br><br>
+    <h2 id="FraseAnim">Te atenderemos en cuanto Podamos ;) </h2>
+    <section class="ParteUno">
+        <div id="PrimeraParte" >
+            <p>Sala de Escuela MusicLife</p>
+            <br>
+            <p>c/Blasco de Garay 40 – 08004 – Barcelona</p>
+            <br>
+            <p>Tel: +34 934 411 718</p>
+        </div>
+        <div id="SegundaParte">
+            <img src="Imagenes/imgGPS.png">
+        </div>
+    </section>
+    <br>
+
+    <section class="zonavideos">
+        <h2 style="color: darkred;">Videos</h2>
+        <div id="videoUno">
+            <video  width="600" height="300" controls>
+                <source  src="Videos/Enseñando.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="videoDos">
+            <video  width="600" height="300" controls>
+                <source  src="Videos/TocandoPiano.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section>
+        <section >
+        <div class="contenedor4">
+            <h2 >CONTACTANOS</h2>
+            <div class="formulario">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <br>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                    <br>
+                    <br>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar campos">
+                </form>
+            </div>
+        </div> 
+        <section class="seccionIconos">
+            <ul >
+                <a href="https://es-es.facebook.com/"><img style="width: 4%;" src="Imagenes/iconoFb.png"></a>
+                <a href="https://www.instagram.com/?hl=es"><img style="width: 4%;" src="Imagenes/IconoInstagram.png"></a>
+                <a href="https://twitter.com/"><img style="width: 4%;" src="Imagenes/iconoTwiter.png"></a>
+                <a href="https://www.whatsapp.com/"><img style="width: 4%;" src="Imagenes/iconoWashap.png"></a>
+            </ul>
+        <footer>
+            <div class="contenedor">
+                <div >
+                    <p>&copy; 2023 Condiciones de uso - Política de Privacidad - Política de Cookies /SergioLaforaBazan</p>
+                </div>
+            </div>
+        </footer>
+        </section>
+
+
+</body>

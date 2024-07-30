@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicLife</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        p{
+            text-align: center;
+        }
+        body{
+            animation: change-background 10s infinite;
+        }
+        @keyframes change-background {
+        0% { background-color: rgb(82, 9, 9); }
+        25% { background-color: rgb(182, 62, 78); }
+        50% { background-color: rgb(246, 108, 35); }
+        75% { background-color: rgb(251, 157, 124); }
+        100% { background-color: rgb(255, 255, 255); }
+        }
+
+JavaScript:
+
+javascript
+
+// Opcional: Si quieres que la animación comience después de que se cargue la página
+window.onload = function() {
+  document.getElementById("background").style.animationPlayState = "running";
+}
+
+En este ejemplo, hemos creado un div con un ID de "background" que cubre toda la pantalla. Luego, hemos aplicado CSS para fijar la posición del fondo y aplicar una animación que cambia el color de fondo cada 10 segundos. La animación utiliza la propiedad @keyframes de CSS para definir los diferentes colores de fondo en diferentes puntos de tiempo.
+
+En JavaScript, hemos agregado una función onload opcional para asegurarnos de que la animación comience después de que se cargue la página. Luego, configuramos la propiedad animationPlayState del div para que la animación se ejecute automáticamente.
+
+Con estos códigos, el fondo cambiará automáticamente de color con una animación suave y se repetirá infinitamente. Puedes ajustar los tiempos y los colores según tus necesidades.
+
+    </style>
+</head>
+<body>
+    <header >
+            <div class="contenedor">
+                <a href="MusicLife.html"><img style="width: 27%;" src="Imagenes/LogoGuitarra-removebg-preview.png"></a>
+                <p class="logo" >Music Life</p>
+                <nav>
+                    <a href="QuienesSomos.html"> ¿Quienes Somos?</a>
+                    <a href="MusicLife.html">Horarios</a>
+                    <a href="MusicLife.html">Nuestros Instructores</a>
+                    <a href="Contactanos.html">Contacto</a>
+                </nav>
+            </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div>
+            <h2>Horarios de Secretaria</h2>
+            <p><b>Martes y miércoles,</b> por la mañana, de 8:00 a 13:00 h.<br>
+                -viernes, por la tarde, de 16:00 a 20:00 h.</p>
+            <br>
+            <p>En periodo de matriculación se atenderá todas las tardes en horario de 18:00 a 21:00 h</p>
+        </div>
+        <div>
+            <h2>Horarios de Infantil</h2>
+            <p><b>De lunes a viernes</b> de 09:00 a 12:00 h </p>
+        </div>
+        <div>
+            <h2>Horarios Adolecentes</h2>
+            <p><b>De lunes a viernes</b> de 16:00 a 19:00 h </p>
+        </div>
+        <div>
+            <h2>Horarios Adultos</h2>
+            <p><b>De lunes a viernes</b> de 18:00 a 22:00</p>
+        </div>
+
+    </section>
+    <section class="seccionIconos">
+        <ul >
+            <a href="https://es-es.facebook.com/"><img style="width: 4%;" src="Imagenes/iconoFb.png"></a>
+            <a href="https://www.instagram.com/?hl=es"><img style="width: 4%;" src="Imagenes/IconoInstagram.png"></a>
+            <a href="https://twitter.com/"><img style="width: 4%;" src="Imagenes/iconoTwiter.png"></a>
+            <a href="https://www.whatsapp.com/"><img style="width: 4%;" src="Imagenes/iconoWashap.png"></a>
+        </ul>
+    <footer>
+        <div class="contenedor">
+            <div >
+                <p>&copy; 2023 Condiciones de uso - Política de Privacidad - Política de Cookies /SergioLaforaBazan</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+
+    
+
+</body>
